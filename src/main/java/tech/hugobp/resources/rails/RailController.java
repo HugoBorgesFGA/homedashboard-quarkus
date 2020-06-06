@@ -16,7 +16,7 @@ import java.util.List;
 public class RailController {
 
     @Inject
-    private RailsRepository railsRepository;
+    RailsRepository railsRepository;
 
     @GET
     public List<Rail> getAll() {
