@@ -17,3 +17,12 @@ services:
     environment:
       ME_CONFIG_MONGODB_ADMINUSERNAME: root
       ME_CONFIG_MONGODB_ADMINPASSWORD: example
+
+  microservice:
+    build: .
+    ports:
+      - 8080:8080
+    environment:
+      DATABASE_HOST: mongo
+      DATABASE_USER: root
+      DATABASE_PASSWORD: example

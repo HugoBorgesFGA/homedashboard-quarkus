@@ -14,7 +14,7 @@ import java.util.List;
 public class DashboardController {
     
     @Inject
-    private DashboardsRepository dashboardsRepository;
+    DashboardsRepository dashboardsRepository;
 
     @GET
     public List<Dashboard> getAll() {

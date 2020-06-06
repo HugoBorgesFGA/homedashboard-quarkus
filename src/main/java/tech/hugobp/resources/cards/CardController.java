@@ -14,7 +14,7 @@ import java.util.List;
 public class CardController {
 
     @Inject
-    private CardsRepository cardsRepository;
+    CardsRepository cardsRepository;
 
     @GET
     public List<Card> getAll() {
