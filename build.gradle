@@ -9,13 +9,11 @@ repositories {
 }
 
 dependencies {
-    implementation 'io.quarkus:quarkus-spring-boot-properties'
-    implementation 'io.quarkus:quarkus-resteasy-jackson'
-    implementation 'io.quarkus:quarkus-jackson'
     implementation 'io.quarkus:quarkus-rest-client'
-    implementation 'io.quarkus:quarkus-rest-client-jackson'
-    implementation 'io.quarkus:quarkus-vertx'
+    implementation 'io.quarkus:quarkus-rest-client-jsonb'
     implementation 'io.quarkus:quarkus-mongodb-client'
+    implementation 'io.quarkus:quarkus-mongodb-panache'
+    implementation 'io.quarkus:quarkus-spring-boot-properties'
     implementation enforcedPlatform("${quarkusPlatformGroupId}:${quarkusPlatformArtifactId}:${quarkusPlatformVersion}")
     implementation 'io.quarkus:quarkus-resteasy'
 
